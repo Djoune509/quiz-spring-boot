@@ -1,0 +1,15 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:text": {
+            "context": "label"
+        },
+        "th:": {},
+        "th:href": {
+            "context": "a"
+        },
+        "th:name": {
+            "context": "input"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Quiz Académique</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style> 
+        body{
+            background: linear-gradient(120deg,#1c92d2,#f2fcfe);
+            height:100vh;
+            display:flex; 
+            justify-content:center;
+            align-items:center; 
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        
+        .quiz-box{
+            background:white; 
+            padding:40px; 
+            border-radius:15px; 
+            width:600px; 
+            text-align:center; 
+            box-shadow:0 10px 25px rgba(0,0,0,0.3); 
+        }
+
+        h1{ 
+            margin-bottom:20px; 
+            font-weight:bold;
+        }
+
+        .matiere-btn{
+            padding:15px; 
+            font-size:18px; 
+            margin:10px 0; 
+            width:100%;
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="quiz-box">
+        <h1>Bienvenue au QuizBook</h1>
+        <p>Sélectionnez une matière pour commencer.</p>
+        <div class="d-grid gap-3"> 
+            <a th:href="@{/math}" class="btn btn-primary matiere-btn"> Mathématique </a>
+            <a th:href="@{/chimie}" class="btn btn-success matiere-btn"> Chimie </a> 
+            <a th:href="@{/anglais}" class="btn btn-warning matiere-btn"> Anglais </a>
+        </div>
+    </div>
+</body> 
+</html>
